@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<!--
+	Typify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		
+<title>PetLife</title>
+<meta charset=charset=iso-8859-1" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+<? header("Content-type: text/html; charset=iso-8859-1"); ?>
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<ul class="actions">				
+<li><a href="../LostAndFound/Home.html" class="button small-btn">Lost & Found</a></li>
+<li><a href="../Social/Home.html" class="button small-btn">Social</a></li>
+<li><a href="../Fitness/Home.html" class="button small-btn">Fitness</a></li>
+<li><a href="https://www.google.com/maps/search/veterenarian/@38.6217758,-90.2576312,12z/data=!3m1!4b1" class="button small-btn">Find a Vet</a></li>
+</ul>
+<img src = "images\SocialPetworkLogo2.png" style="width:537px;height:72px;">
+			
+
+</head>
+	<body>
+
+		<!-- Banner -->
+			<section id="banner">
+	<h2><strong>Found a Pet</strong> <br>
+<h3><small>Reconnect a missing pet with their person</small></h3>
+
+			
+<!--<form method = "post">-->
+<h4>Pet Type</h4>
+<div class="radio">
+  <input type="radio" name="petType" value="Dog" id="Dog"><label for="Dog">Dog</label>
+  <input type="radio" name="petType" value="Cat" id="Cat"><label for="Cat"> Cat</label>
+  <input type="radio" name="petType" value="Bird" id="Bird"><label for="Bird"> Bird</label>
+  <input type="radio" name="petType" value="Rodent" id="Rodent"><label for="Rodent">Rodent</label> 
+  <input type="radio" name="petType" value="Reptile" id="Reptile"><label for="Reptile">Reptile</label>
+  <input type="radio" name="petType" value="Other" id="Other"><label for="Other">Other</label>
+<br>
+<br>
+<h4 id="date">Date Found:</h4>
+<div>
+<font color = "black"><input id="date" type="date" value = "2017-10-14" color = "black" required style = "none"/></font>
+</div>
+</div>
+<br>
+<h4>Select image to upload: </h4>
+<input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+<input type="submit" value="Submit Form" name="submit" onclick="GetDataAndSave();window.location='DataSavedToDB.html';"">
+
+<!--</form>-->
+	
+<script src="assets/js/localStorage.js"></script>
+<script>
+function GetDataAndSave(){
+	SavePet("something","PuppyName,Species,Breed,Age,MissingDate,FoundDate,Missing,FoundGeocodeLat,MissingGeocodeLat,FoundGeocodeLong,MissingGeocodeLong");
+	console.log(GetPets());
+	}
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Typify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+		<title>TheSocialPetwork</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<ul class="actions">				
+<li><a href="../LostAndFound/Home.html" class="button small-btn">Lost & Found</a></li>
+<li><a href="../Social/Home.html" class="button small-btn">Social</a></li>
+<li><a href="../Fitness/Home.html" class="button small-btn">Fitness</a></li>
+<li><a href="https://www.google.com/maps/search/veterenarian/@38.6217758,-90.2576312,12z/data=!3m1!4b1" class="button small-btn">Find a Vet</a></li>
+</ul>
+<img src = "images\SocialPetworkLogo2.png" style="width:537px;height:72px;">
+		
+	</head>
+	<body>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1 style="font-size:50px"><strong>Find A Park</strong></h1>
+				<h1 style="font-size:25px"><strong>Dog Parks Near Me</strong></h1>
+			</section>
+			
+			<div id="mapid" style="height: 360px;"></div>
+			
+		<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Current Activity</th>
+											<th>Park</th>
+											<th>Neighborhood</th>
+											
+										</tr>
+									</thead>
+									<tbody id="list" >
+										<tr>
+											<td style="width:30%"><img src="images\green_paw.jpg" alt="Mountain View" style="width:76px;height:57px;"> Pet friends are here currently. </td>
+											<td>Benton Park Dog Park</td>
+											<td>Benton Park</td>
+											
+										</tr>
+										<tr>
+											<td style="width:30%"><img src="images\yellow_paw.jpg" alt="Mountain View" style="width:76px;height:57px;"> Pet friends might be here currently. </td>
+											<td>Willmore Park Dog Park</td>
+											<td>Saint Louis Hills</td>
+											
+										</tr>
+										
+									</tbody>
+								
+								</table>
+							</div>
+
+
+						</div>
+	
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy; TheSocialPetwork. Design: <a href="http://templated.co/">TEMPLATED</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		
+		
+		
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+			<script>
+				var mymap = L.map('mapid').setView([38.62,-90.19], 13);
+				L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiYndwZmlnaHRjbHViIiwiYSI6ImNqOHJraWNhYjE4a2EzMHVtODVhcmNhZXoifQ.yIo6PG-u9eoBiqpc-0s2BA'
+}).addTo(mymap);
+
+var marker = L.marker([38.45, -90.35]).addTo(mymap);
+var marker = L.marker([38.6, -90.25]).addTo(mymap);
+var marker = L.marker([38.6, -90.2]).addTo(mymap);
+var marker = L.marker([38.63, -90.19]).addTo(mymap);
+var marker = L.marker([38.64, -90.25]).addTo(mymap);
+var marker = L.marker([38.64, -90.56]).addTo(mymap);
+
+
+			</script>
+			<script src="assets/js/localStorage.js"></script>
+			
+			
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<!--
+	Typify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		
+<title>PetLife</title>
+<meta charset=charset=iso-8859-1" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+<? header("Content-type: text/html; charset=iso-8859-1"); ?>
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<ul class="actions">				
+<li><a href="../LostAndFound/Home.html" class="button small-btn">Lost & Found</a></li>
+<li><a href="../Social/Home.html" class="button small-btn">Social</a></li>
+<li><a href="../Fitness/Home.html" class="button small-btn">Fitness</a></li>
+<li><a href="https://www.google.com/maps/search/veterenarian/@38.6217758,-90.2576312,12z/data=!3m1!4b1" class="button small-btn">Find a Vet</a></li>
+</ul>
+<img src = "images\SocialPetworkLogo2.png" style="width:537px;height:72px;">
+			
+
+</head>
+	<body>
+
+		<!-- Banner -->
+			<section id="banner">
+	<h2><strong>Data was added to database.</strong> <br>
+<h3 ><a style="color:white;" href="SeeMissingPets.html">See Missing Pets</a></h3>
+
+	
+<script src="assets/js/localStorage.js"></script>
+<script>
+function GetDataAndSave(){
+	SavePet("something","PuppyName,Species,Breed,Age,MissingDate,FoundDate,Missing,FoundGeocodeLat,MissingGeocodeLat,FoundGeocodeLong,MissingGeocodeLong");
+	console.log(GetPets());
+	}
+
+
+</script>
+
+
+
+
+</body>
+</html>
